@@ -24,13 +24,13 @@ st.selectbox('select element',[el_list])
 
 st.multiselect('select location', file_name_list,file_name_list[0]) #add the first location as a default option 
 
-x = range(1,20)
-y = [6, 7, 22, 14, 35, 10, 23, 55, 5, 3, 16, 72, 3, 4, 5, 11, 21, 55, 15, 2]
+x = range(1,14)
+y = [18.40, 20.92, 32.30, 32.03, 27.62, 27.77, 39.33, 21.48, 36.96, 35.78, 36.11, 31.10, 28.73, 29.40]
 
 p = figure(
     title='simple line example',
-    x_axis_label='x',
-    y_axis_label='y')
+    x_axis_label='Sample',
+    y_axis_label='Temperature (℃)')
 
 #p.line(x, y, legend_label='Trend', line_width=2)
 p.circle_dot(x, y, legend_label='Trend', size=14, color='navy', fill_color='orange', alpha = 0.5)

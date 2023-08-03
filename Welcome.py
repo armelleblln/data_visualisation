@@ -23,5 +23,10 @@ st.dataframe(df)
 el_list = df.columns.tolist()[27:80]
 st.selectbox('select element',[el_list])
 
-
 st.multiselect('select location', file_name_list,file_name_list[0]) #add the first location as a default option 
+x=df['Si']
+y=df['Al']
+p1 = figure(
+  x_axis_label='element',
+  y_axis_label='abundance')
+p.circle(x, y, legend_label='Trend', size=7)

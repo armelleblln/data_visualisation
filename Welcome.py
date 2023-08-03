@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-#import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 from bokeh.plotting import figure
 import os
 
@@ -24,6 +24,11 @@ st.selectbox('select element',[el_list])
 
 st.multiselect('select location', file_name_list,file_name_list[0]) #add the first location as a default option 
 
+
+def my_plot(el_x,el_y):
+    plt.scatter(df[el_x],df[el_y])
+    return plt.show()
+my_plot('Mg','Ca') 
 
 x = [1, 2, 3, 4, 5]
 y = [6, 7, 2, 4, 5]

@@ -27,6 +27,14 @@ st.selectbox('select element',[el_list])
 st.multiselect('select location', file_name_list,file_name_list[0]) #add the first location as a default option 
 
 
+def my_plot(el_x,el_y):
+    plt.scatter(df[el_x],df[el_y])
+    return plt.show()
+my_plot('Mg','Ca') 
 
+file_list =[]
+for i in os.listdir('data/'):
+    if i.endswith('.csv'):
+        file_list.append(i)
 
 

@@ -32,7 +32,7 @@ p = figure(
     title='Temperature in degree Celsius for the DVB Sample',
     y_axis_label='Temperature (\N{DEGREE SIGN}C)',
     x_axis_label='Sample')
-p.line(x, y, legend_label='Trend', color = 'navy', line_width=1, line_style='dashed')
+p.line(x, y, legend_label='Trend', color = 'navy', line_width=1, line_dash='dashed')
 p.circle_dot(x, y, size=14, color='navy', fill_color='orange', alpha = 0.5)
 st.bokeh_chart(p, use_container_width=True)
 

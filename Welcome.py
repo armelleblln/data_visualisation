@@ -2,7 +2,9 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from bokeh.plotting import figure
+from ipywidgets import interact
 import os
+
 
 st.write('Hello world')
 
@@ -30,16 +32,9 @@ def my_plot(el_x,el_y):
     return plt.show()
 my_plot('Mg','Ca') 
 
-x = [1, 2, 3, 4, 5]
-y = [6, 7, 2, 4, 5]
-
-p = figure(
-    title='simple line example',
-    x_axis_label='x',
-    y_axis_label='y')
-
-p.line(x, y, legend_label='Trend', line_width=2)
-
-st.bokeh_chart(p, use_container_width=True)
+file_list =[]
+for i in os.listdir('data/'):
+    if i.endswith('.csv'):
+        file_list.append(i)
 
 

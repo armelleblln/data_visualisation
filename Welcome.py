@@ -35,5 +35,5 @@ y = st.selectbox('y-axis', el_list) #df.columns.tolist()[27:80])
 p1 = figure(
   x_axis_label='x + ( wt%)',
   y_axis_label='y + ( wt%)')
-p1.scatter(df[x]/10000, df[y/10000], legend_label='Trend', size=7)
+p1.scatter(df[x]/10000, df[y]/10000, legend_label='Trend', size=7)
 st.bokeh_chart(p1, use_container_width = True)

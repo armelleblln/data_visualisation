@@ -33,7 +33,7 @@ st.multiselect('select location', file_name_list,file_name_list[0]) #add the fir
 x = st.selectbox('x-axis', df.columns.tolist()[27:80])
 y = st.selectbox('y-axis', df.columns.tolist()[27:80])
 p1 = figure(
-  x_axis_label='x + ( wt%)',
-  y_axis_label='y + ( wt%)')
+  x_axis_label='x/10000 + ( wt%)',
+  y_axis_label='y/10000 + ( wt%)')
 p1.scatter(df[x], df[y], legend_label='Trend', size=7)
 st.bokeh_chart(p1, use_container_width = True)

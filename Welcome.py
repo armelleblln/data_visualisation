@@ -37,16 +37,4 @@ for i in os.listdir('data/'):
     if i.endswith('.csv'):
         file_list.append(i)
 
-def my_plot(el_x, el_y, file_name, x_lim, check):
-    df = pd.read_csv('data/' + file_name)
-    plt.scatter(df[el_x]/10000, df[el_y]/10000)
 
-    if check:
-        plt.xlabel(el_x + ' (wt%)')
-        plt.ylabel(el_y + ' (wt%)')
-    else:
-        plt.xlabel(el_x + ' (wt-ppm)')
-        plt.ylabel(el_y + ' (wt-ppm)')
-    plt.xlim(0, x_lim)
-    plt.axhline(y = df[el_y].mean()/10000, color='g')
-    return plt.show()

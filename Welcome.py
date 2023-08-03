@@ -33,8 +33,8 @@ p = figure(
     y_axis_label='Temperature (\N{DEGREE SIGN}C)',
     x_axis_label='Sample')
 
-#p.line(x, y, legend_label='Trend', line_width=2)
-p.circle_dot(x, y, legend_label='Trend', size=14, color='navy', fill_color='orange', alpha = 0.5)
+p.line(x, y, legend_label='Trend', line_width=2)
+p.circle_dot(x, y, size=14, color='navy', fill_color='orange', alpha = 0.5)
 st.bokeh_chart(p, use_container_width=True)
 
 

@@ -34,4 +34,4 @@ p1 = figure(
   x_axis_label='element',
   y_axis_label='abundance')
 p1.scatter(x, y, legend_label='Trend', size=7)
-st.bokeh_chart(p1)
+st.bokeh_chart(p1, use_container_width = True)

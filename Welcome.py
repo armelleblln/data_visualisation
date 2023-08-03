@@ -30,7 +30,7 @@ y = range(1,14)
 p = figure(
     title='simple line example',
     x_axis_label='Temperature (\N{DEGREE SIGN}C)'
-    y_axis_label='Sample',)
+    y_axis_label='Sample')
 
 #p.line(x, y, legend_label='Trend', line_width=2)
 p.circle_dot(x, y, legend_label='Trend', size=14, color='navy', fill_color='orange', alpha = 0.5)

@@ -25,7 +25,7 @@ st.selectbox('select element',[el_list])
 st.multiselect('select location', file_name_list,file_name_list[0]) #add the first location as a default option 
 
 x = range(1,20)
-y = [6, 7, 2, 4, 5, 10, 23, 55, 5, 3, 16, 72, 3, 4, 5, 11, 21, 55, 15, 2]
+y = [6, 7, 22, 14, 35, 10, 23, 55, 5, 3, 16, 72, 3, 4, 5, 11, 21, 55, 15, 2]
 
 p = figure(
     title='simple line example',
@@ -33,7 +33,7 @@ p = figure(
     y_axis_label='y')
 
 #p.line(x, y, legend_label='Trend', line_width=2)
-p.circle(x, y, legend_label='Trend', line_width=2)
+p.circle_dot(x, y, legend_label='Trend', size=20)
 st.bokeh_chart(p, use_container_width=True)
 
 

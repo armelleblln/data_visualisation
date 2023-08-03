@@ -30,8 +30,8 @@ st.multiselect('select location', file_name_list,file_name_list[0]) #add the fir
 
 #x = df['Si']
 #y = df['Al']
-x = st.selectbox('x-axis', df.columns.tolist()[27:80])
-y = st.selectbox('y-axis', df.columns.tolist()[27:80])
+x = st.selectbox('x-axis', el_list) #df.columns.tolist()[27:80])
+y = st.selectbox('y-axis', el_list) #df.columns.tolist()[27:80])
 p1 = figure(
   x_axis_label='x/10000 + ( wt%)',
   y_axis_label='y/10000 + ( wt%)')

@@ -24,8 +24,8 @@ st.selectbox('select element',[el_list])
 
 st.multiselect('select location', file_name_list,file_name_list[0]) #add the first location as a default option 
 
-x = [1, 2, 3, 4, 5]
-y = [6, 7, 2, 4, 5]
+x = [1:20]
+y = [6, 7, 2, 4, 5, 10, 23, 55, 5, 3, 16, 72, 3, 4, 5, 11, 21, 55, 15, 2,]
 
 p = figure(
     title='simple line example',

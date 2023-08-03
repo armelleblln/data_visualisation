@@ -2,6 +2,14 @@ import streamlit as st
 import pandas as pd
 st.write('Hello world')
 
+file_name_list = []
+for i in os.listdir(): 
+  if i.endswith('csv'):
+    file_name_list.append(i)
+
+st.write(file_name_list)
+  
+
 df = pd.read_csv('Bastar Craton.csv')
 st.dataframe(df)
 

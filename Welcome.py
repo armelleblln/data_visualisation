@@ -33,4 +33,4 @@ y = df['Al']
 p1 = figure(
   x_axis_label='element',
   y_axis_label='abundance')
-p1.circle(x, y, legend_label='Trend', size=7)
+p1.scatter(x, y, legend_label='Trend', size=7)

@@ -33,7 +33,7 @@ p = figure(
     y_axis_label='y')
 
 #p.line(x, y, legend_label='Trend', line_width=2)
-p.circle_dot(x, y, legend_label='Trend', size=20)
+p.circle_dot(x, y, legend_label='Trend', size=14, color='navy', fill_color='orange', alpha = 0.5)
 st.bokeh_chart(p, use_container_width=True)
 
 
